@@ -154,14 +154,7 @@ const Navbar = () => {
                 <MdContactPhone className="navbar__icon" />
                 <span>Contact</span>
               </Link>
-              <Link 
-                to="/admin/login" 
-                className={`navbar__dropdown-link ${isActive('/admin/login') ? 'active' : ''}`}
-                onClick={handleMoreDropdownClick}
-              >
-                <RiAdminFill className="navbar__icon" />
-                <span>Admin Login</span>
-              </Link>
+              
             </div>
           </div>
 

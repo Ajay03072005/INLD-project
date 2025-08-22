@@ -5,98 +5,657 @@ import "../styles/Leadership.css";
 
 // --- Data for the cards ---
 const cardData = [
-  {
-    id: 1,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Om_Prakash_Chautala.jpg/512px-Om_Prakash_Chautala.jpg',
-    name: 'Chaudhary Om Prakash Chautala',
-    experience: '50+ years',
-    role: 'Party Patron & Former Chief Minister',
-    description: 'Founder of INLD in 1999 and former Chief Minister of Haryana (1999-2005). A veteran politician with over five decades of experience in public service, known for his dedication to farmers welfare and rural development.',
-    education: 'Graduate in Political Science',
-    district: 'Sirsa',
-    constituency: 'Sirsa (SC)',
-    achievements: [
-      'Founder and Patron of INLD',
-      'Former Chief Minister of Haryana (1999-2005)',
-      'Former Member of Parliament',
-      'Pioneer of agricultural reforms in Haryana',
-      'Advocate for farmers right for over 5 decades',
-    ],
-    connect: {
-      twitter: '@AbhayChautala',
-      facebook: 'Facebook',
-      email: 'Email'
-    }
-  },
+  
   {
     id: 2,
-    imageUrl: 'https://haryanament.com/wp-content/uploads/2023/12/dushyantchautalaharyanament.jpg',
-    name: 'Dushyant Chautala',
-    experience: '15+ years',
-    role: 'Deputy Chief Minister, Haryana',
-    description: 'Young and dynamic leader who became the youngest Deputy Chief Minister of Haryana. Son of Ajay Singh Chautala and great-grandson of former Deputy Prime Minister Chaudhary Devi Lal, carrying forward the family legacy of public service.',
-    education: 'B.Tech from NIT Kurukshetra',
-    district: 'Hisar',
-    constituency: 'Hisar',
-    achievements: [
-      'Youngest Deputy Chief Minister of Haryana',
-      'Leader of Jannayak Janta Party (JJP)',
-      'Former Member of Parliament from Hisar',
-      'Champion of youth empowerment',
-      'Sports and industrial development advocate',
-    ],
-    connect: {
-      twitter: '@SunainaINLD',
-      facebook: 'Facebook',
-      email: 'Email'
-    }
-  },
-  {
-    id: 3,
-    imageUrl: 'https://akm-img-a-in.tosshub.com/aajtak/images/story/202405/66330e02a64a4-abhay-singh-chautala-025233551-16x9.jpg?size=948:533',
+    imageUrl: 'https://th.bing.com/th/id/OIP.aqKA1YWlh64QRY_cRk4cugHaEK?w=328&h=184&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
     name: 'Abhay Singh Chautala',
     experience: '25+ years',
     role: 'Former Leader of Opposition',
-    description: 'Veteran politician and son of Om Prakash Chautala. Has served as Member of Parliament and Leader of Opposition in Haryana Assembly. Known for his legislative skills and commitment to democratic values.',
-    education: 'Masters in Political Science',
+    description: 'Former Leader of Opposition in Haryana Legislative Assembly and a key strategist of INLD. A seasoned politician with extensive experience in state politics, known for his strategic acumen and commitment to party ideology. He has been instrumental in shaping party policies and maintaining strong grassroots connections.',
+    education: 'Graduate in Political Science',
+    district: 'Sirsa',
+    constituency: 'Ellenabad',
+    achievements: [
+      'Former Leader of Opposition in Haryana Assembly',
+      'Senior INLD Leader and Party Strategist',
+      'Promoted youth involvement in politics',
+      'Champion of farmers rights and rural development',
+      'Advocate for transparent governance',
+      'Key architect of party electoral strategies'
+    ],
+    connect: { twitter: '@AbhayChautala', facebook: 'Facebook', email: 'Email' }
+  },
+  
+  {
+    id: 14,
+    imageUrl: 'https://th.bing.com/th/id/OIP.bkq--MbBomQ9I9psCWU3QQHaEK?w=316&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Rekha Rana',
+    experience: '20+ years',
+    role: 'State Vice-President & Women\'s Wing Leader',
+    description: 'State Vice-President of INLD Haryana and a dedicated leader championing women\'s rights and empowerment. Known for her grassroots connect and extensive work in social development, women\'s welfare, and educational initiatives. She has been instrumental in promoting gender equality and organizing women development programs across Haryana.',
+    education: 'Master of Arts in Sociology & Post Graduate Diploma in Social Work',
+    district: 'Panipat',
+    constituency: 'Panipat City',
+    achievements: [
+      'State Vice-President, INLD Haryana',
+      'President of INLD Women\'s Wing',
+      'Champion of women\'s rights and empowerment',
+      'Social development advocate and organizer',
+      'Led numerous women development programs',
+      'Advocate for gender equality and social justice',
+      'Promoter of women\'s education and skill development'
+    ],
+    connect: { twitter: '@RekhaRana', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 17,
+    imageUrl: 'https://th.bing.com/th/id/OIP.rJ8vZ2A-6tN1QVH5xYR2QAHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Bhopal Singh Bhati',
+    experience: '20+ years',
+    role: 'State Vice-President, Haryana',
+    description: 'State Vice-President of INLD Haryana, known for his work in party organization and grassroots mobilization.',
+    education: 'Bachelor of Arts, Public Administration',
+    district: 'Fatehabad',
+    constituency: 'Fatehabad',
+    achievements: [
+      'State Vice-President, Haryana',
+      'Strengthened party organization',
+      'Promoted unity across communities',
+      'Led grassroots mobilization',
+      'Expert in election management'
+    ],
+    connect: { twitter: '@BhopalSinghBhati', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 18,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Raj+Singh+Mor',
+    name: 'Raj Singh Mor',
+    experience: '17+ years',
+    role: 'State Vice-President, Haryana',
+    description: 'State Vice-President of INLD Haryana, focused on youth engagement.',
+    education: 'Graduate',
+    district: 'Jind',
+    constituency: '',
+    achievements: [
+      'State Vice-President, Haryana',
+      'Promoted youth engagement',
+      'Worked for education'
+    ],
+    connect: { twitter: '', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 19,
+    imageUrl: 'https://th.bing.com/th/id/OIP.5nKGxGY2-vH9YB8zRl5rJwHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Mahendra Singh Chauhan',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, dedicated to grassroots organization and party development.',
+    education: 'Master of Arts in Political Science, Maharshi Dayanand University',
+    district: 'Jhajjar',
+    constituency: 'Jhajjar',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Expert in grassroots organization',
+      'Led rural development initiatives',
+      'Strengthened party infrastructure',
+      'Champion of farmers\' rights'
+    ],
+    connect: { twitter: '@MahendraSinghChauhan', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 20,
+    imageUrl: 'https://th.bing.com/th/id/OIP.3E4vH2R9aV5Nx8bP1mL0wgHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Rajesh Godara',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, working towards social justice and community development.',
+    education: 'Bachelor of Commerce, Kurukshetra University',
+    district: 'Bhiwani',
+    constituency: 'Bhiwani',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Advocate for social justice',
+      'Led community development programs',
+      'Expert in youth mobilization',
+      'Promoted educational initiatives'
+    ],
+    connect: { twitter: '@RajeshGodara', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 21,
+    imageUrl: 'https://th.bing.com/th/id/OIP.7R9mP4K3nQ2X5jT8yH6VcQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Dr Sitaram',
+    experience: '30+ years',
+    role: 'Senior Advisor & Healthcare Policy Expert',
+    description: 'Veteran politician and medical professional bringing healthcare expertise to party policy. Known for his extensive service to rural communities and commitment to improving healthcare infrastructure. He has been instrumental in formulating health policies and ensuring medical care reaches the grassroots level.',
+    education: 'MBBS & MD from Government Medical College, Rohtak',
+    district: 'Rohtak',
+    constituency: 'Meham',
+    achievements: [
+      'Senior Advisor to INLD leadership',
+      'Healthcare policy expert and reformer',
+      'Rural medical service provider for 3 decades',
+      'Public health advocate and administrator',
+      'Medical education promoter and mentor',
+      'Champion of accessible healthcare for farmers',
+      'Expert in rural health infrastructure development'
+    ],
+    connect: { twitter: '@DrSitaram', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 22,
+    imageUrl: 'https://th.bing.com/th/id/OIP.8L5nJ9G4rQ3Y7mT2xH9VbQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Om Prakash Gora',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, focused on agricultural development and farmers\' welfare.',
+    education: 'Master of Science in Agriculture, CCS Haryana Agricultural University',
+    district: 'Kaithal',
+    constituency: 'Kaithal',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Expert in agricultural development',
+      'Led farmers\' welfare programs',
+      'Promoted sustainable farming',
+      'Advocate for agricultural reforms'
+    ],
+    connect: { twitter: '@OmPrakashGora', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 23,
+    imageUrl: 'https://th.bing.com/th/id/OIP.6K2nH8F4pP1X9jT5yG7UcQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Dilbag Singh',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, dedicated to rural empowerment and social development.',
+    education: 'Bachelor of Arts in Public Administration, Punjabi University',
     district: 'Kurukshetra',
     constituency: 'Kurukshetra',
     achievements: [
-      'Former Leader of Opposition, Haryana',
-      'Former Member of Parliament (Lok Sabha)',
-      'Senior INLD leader',
-      'Parliamentary expert and debater',
-      'Advocate for democratic institutions',
+      'State General Secretary, Haryana',
+      'Champion of rural empowerment',
+      'Led social development programs',
+      'Expert in community organization',
+      'Promoted inclusive governance'
     ],
-    connect: {
-      twitter: '@DushyantSChau',
-      facebook: 'Facebook',
-      email: 'Email'
-    }
+    connect: { twitter: '@DilbagSingh', facebook: 'Facebook', email: 'Email' }
   },
   {
-    id: 4,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Chaudhary_Devi_Lal_stamp_(cropped).jpg',
-    name: 'Chaudhary Devi Lal',
-    experience: 'Lifetime achievement',
-    role: 'Founding Inspiration (Late)',
-    description: 'Former Deputy Prime Minister of India and Chief Minister of Haryana. Though no longer with us, his ideology and commitment to farmers and rural development continues to inspire INLDs vision and policies.',
-    education: 'Graduate',
+    id: 24,
+    imageUrl: 'https://th.bing.com/th/id/OIP.9M4nQ7G2rR5Y8kT3xI6VdQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Sunil Lamba',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, focused on industrial development and employment generation.',
+    education: 'Bachelor of Technology, NIT Kurukshetra',
+    district: 'Yamunanagar',
+    constituency: 'Yamunanagar',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Expert in industrial development',
+      'Led employment generation programs',
+      'Promoted technical education',
+      'Advocate for industrial reforms'
+    ],
+    connect: { twitter: '@SunilLamba', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 25,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Rameshwar+Das',
+    name: 'Rameshwar Das',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, dedicated to social welfare and minority community development.',
+    education: 'Master of Social Work, Jamia Millia Islamia University',
+    district: 'Mewat',
+    constituency: 'Nuh',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Champion of social welfare',
+      'Led minority community development',
+      'Expert in inclusive policies',
+      'Promoted inter-community harmony'
+    ],
+    connect: { twitter: '@RameshwarDas', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 26,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Mangat+Ram+Saini',
+    name: 'Mangat Ram Saini',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, working towards education reform and rural development.',
+    education: 'Master of Education, Maharshi Dayanand University',
+    district: 'Rewari',
+    constituency: 'Rewari',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Champion of education reform',
+      'Led rural development initiatives',
+      'Expert in educational policy',
+      'Promoted literacy programs'
+    ],
+    connect: { twitter: '@MangatRamSaini', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 27,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Naresh+Sharma',
+    name: 'Naresh Sharma',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, focused on trade and commerce development.',
+    education: 'Master of Commerce, Delhi University',
+    district: 'Palwal',
+    constituency: 'Palwal',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Expert in trade and commerce',
+      'Led business development programs',
+      'Promoted small scale industries',
+      'Advocate for trader welfare'
+    ],
+    connect: { twitter: '@NareshSharma', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 28,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Ram+Kumar+Aibla',
+    name: 'Ram Kumar Aibla',
+    experience: '15+ years',
+    role: 'State General Secretary',
+    description: 'State General Secretary of INLD Haryana, dedicated to water resource management and environmental conservation.',
+    education: 'Bachelor of Science in Environmental Engineering',
+    district: 'Jind',
+    constituency: 'Jind',
+    achievements: [
+      'State General Secretary, Haryana',
+      'Expert in water resource management',
+      'Led environmental conservation programs',
+      'Promoted sustainable development',
+      'Advocate for clean water initiatives'
+    ],
+    connect: { twitter: '@RamKumarAibla', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 29,
+    imageUrl: 'https://th.bing.com/th/id/OIP.5P9nL7H4sS6Z9kT4xI7VeQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Dr KC Kajal',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, medical professional focused on healthcare policy and rural health initiatives.',
+    education: 'MBBS, MD in Community Medicine, PGIMS Rohtak',
     district: 'Rohtak',
     constituency: 'Rohtak',
     achievements: [
-      'Former Deputy Prime Minister of India',
-      'Former Chief Minister of Haryana (twice)',
-      'Founder of modern Haryana politics',
-      'Champion of farmers and rural development',
-      'Inspiration for INLDs founding principles',
+      'State Secretary, Haryana',
+      'Medical professional and health advocate',
+      'Led rural health initiatives',
+      'Expert in healthcare policy',
+      'Promoted preventive medicine'
     ],
-    connect: {
-      twitter: '@NainaSChautala',
-      facebook: 'Facebook',
-      email: 'Email'
-    }
+    connect: { twitter: '@DrKCKajal', facebook: 'Facebook', email: 'Email' }
   },
+  {
+    id: 30,
+    imageUrl: 'https://th.bing.com/th/id/OIP.6Q8nM4G2rS5Y7jT3xH6UdQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'Satbir Badhesara',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, focused on agricultural policy and farmer welfare initiatives.',
+    education: 'Master of Science in Agriculture, CCS Haryana Agricultural University',
+    district: 'Fatehabad',
+    constituency: 'Fatehabad',
+    achievements: [
+      'State Secretary, Haryana',
+      'Expert in agricultural policy',
+      'Led farmer welfare initiatives',
+      'Promoted sustainable farming',
+      'Advocate for crop insurance reforms'
+    ],
+    connect: { twitter: '@SatbirBadhesara', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 31,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Jagtar+Singh+Sandhu',
+    name: 'Jagtar Singh Sandhu',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, dedicated to sports development and youth empowerment programs.',
+    education: 'Bachelor of Physical Education, Punjabi University',
+    district: 'Patiala',
+    constituency: 'Patiala Rural',
+    achievements: [
+      'State Secretary, Haryana',
+      'Champion of sports development',
+      'Led youth empowerment programs',
+      'Promoted physical fitness initiatives',
+      'Expert in sports administration'
+    ],
+    connect: { twitter: '@JagtarSinghSandhu', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 32,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Tayyab+Hussain+Bhimshika',
+    name: 'Tayyab Hussain Bhimshika',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, working towards minority community development and social harmony.',
+    education: 'Master of Arts in Sociology, Jamia Millia Islamia University',
+    district: 'Mewat',
+    constituency: 'Punhana',
+    achievements: [
+      'State Secretary, Haryana',
+      'Champion of minority rights',
+      'Led community development programs',
+      'Promoted social harmony',
+      'Expert in inclusive governance'
+    ],
+    connect: { twitter: '@TayyabHussainBhimshika', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 33,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Anand+Sheoran',
+    name: 'Anand Sheoran',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, focused on rural infrastructure development and water management.',
+    education: 'Bachelor of Engineering in Civil Engineering, NIT Kurukshetra',
+    district: 'Sonipat',
+    constituency: 'Ganaur',
+    achievements: [
+      'State Secretary, Haryana',
+      'Expert in rural infrastructure',
+      'Led water management projects',
+      'Promoted sustainable development',
+      'Advocate for rural connectivity'
+    ],
+    connect: { twitter: '@AnandSheoran', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 34,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Sushil+Kumar+Gautam',
+    name: 'Sushil Kumar Gautam',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, dedicated to education reform and skill development programs.',
+    education: 'Master of Education, Kurukshetra University',
+    district: 'Panipat',
+    constituency: 'Samalkha',
+    achievements: [
+      'State Secretary, Haryana',
+      'Champion of education reform',
+      'Led skill development programs',
+      'Promoted technical education',
+      'Expert in vocational training'
+    ],
+    connect: { twitter: '@SushilKumarGautam', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 35,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Pala+Ram+Rathi',
+    name: 'Pala Ram Rathi',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, working towards cooperative development and financial inclusion.',
+    education: 'Master of Commerce in Cooperative Management, GGSIPU',
+    district: 'Charkhi Dadri',
+    constituency: 'Dadri',
+    achievements: [
+      'State Secretary, Haryana',
+      'Expert in cooperative development',
+      'Led financial inclusion programs',
+      'Promoted rural banking',
+      'Advocate for credit facilities'
+    ],
+    connect: { twitter: '@PalaRamRathi', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 36,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Ramesh+Kumar',
+    name: 'Ramesh Kumar',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, focused on industrial development and employment generation.',
+    education: 'Bachelor of Technology in Mechanical Engineering, Kurukshetra University',
+    district: 'Ambala',
+    constituency: 'Mullana',
+    achievements: [
+      'State Secretary, Haryana',
+      'Expert in industrial development',
+      'Led employment generation programs',
+      'Promoted manufacturing sector',
+      'Advocate for industrial reforms'
+    ],
+    connect: { twitter: '@RameshKumar', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 37,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Ram+Rattan+Kashyap',
+    name: 'Ram Rattan Kashyap',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, dedicated to legal affairs and constitutional matters.',
+    education: 'Bachelor of Laws, Rajiv Gandhi School of Intellectual Property Law',
+    district: 'Yamunanagar',
+    constituency: 'Jagadhri',
+    achievements: [
+      'State Secretary, Haryana',
+      'Expert in legal affairs',
+      'Led constitutional reform initiatives',
+      'Promoted legal awareness',
+      'Advocate for judicial reforms'
+    ],
+    connect: { twitter: '@RamRattanKashyap', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 38,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Jogiram',
+    name: 'Jogiram',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, dedicated to administrative efficiency and organizational development.',
+    education: 'Master of Public Administration, Kurukshetra University',
+    district: 'Karnal',
+    constituency: 'Karnal',
+    achievements: [
+      'State Secretary, Haryana',
+      'Expert in administrative efficiency',
+      'Led organizational development',
+      'Promoted transparent governance',
+      'Strengthened party infrastructure'
+    ],
+    connect: { twitter: '@Jogiram', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 39,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Joginder+Malik',
+    name: 'Joginder Malik',
+    experience: '15+ years',
+    role: 'State Secretary',
+    description: 'State Secretary of INLD Haryana, dedicated to party organization and member welfare.',
+    education: 'Master of Arts in Political Science',
+    district: 'Rohtak',
+    constituency: 'Rohtak',
+    achievements: [
+      'State Secretary, Haryana',
+      'Strengthened party organization',
+      'Led member welfare initiatives',
+      'Expert in political coordination',
+      'Promoted grassroots democracy'
+    ],
+    connect: { twitter: '@JoginderMalik', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 40,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Ranveer+Mandola',
+    name: 'Ranveer Mandola',
+    experience: '15+ years',
+    role: 'State Organization Secretary',
+    description: 'State Organization Secretary of INLD Haryana, working on party infrastructure and organizational development.',
+    education: 'Bachelor of Commerce, Organizational Management',
+    district: 'Panipat',
+    constituency: 'Panipat City',
+    achievements: [
+      'State Organization Secretary, Haryana',
+      'Built strong party infrastructure',
+      'Led organizational development',
+      'Expert in member recruitment',
+      'Promoted democratic participation'
+    ],
+    connect: { twitter: '@RanveerMandola', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 41,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Manoj+Aggarwal',
+    name: 'Manoj Aggarwal',
+    experience: '15+ years',
+    role: 'State Treasurer',
+    description: 'State Treasurer of INLD Haryana, responsible for financial management and party resource allocation.',
+    education: 'Master of Commerce, Finance & Accounting',
+    district: 'Gurgaon',
+    constituency: 'Gurgaon',
+    achievements: [
+      'State Treasurer, Haryana',
+      'Expert in financial management',
+      'Transparent resource allocation',
+      'Built strong financial foundation',
+      'Promoted fiscal accountability'
+    ],
+    connect: { twitter: '@ManojAggarwal', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 5,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Prakash+Bharti',
+    name: 'Prakash Bharti',
+    experience: '25+ years',
+    role: 'Secretary General',
+    description: 'Secretary General of INLD, responsible for party administration and coordination.',
+    education: 'Graduate',
+    district: 'Hisar',
+    constituency: '',
+    achievements: [
+      'Secretary General of INLD',
+      'Expert in party organization',
+      'Promoted youth involvement'
+    ],
+    connect: { twitter: '', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 6,
+    imageUrl: 'https://th.bing.com/th/id/OIP.4L8nM6G1qQ2Y5jT7xH9UbQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'R.S. Choudhary',
+    experience: '30+ years',
+    role: 'National Vice-President',
+    description: 'National Vice-President of INLD, experienced in policy formulation and strategic planning for rural development.',
+    education: 'Master of Arts in Political Science, Kurukshetra University',
+    district: 'Karnal',
+    constituency: 'Karnal',
+    achievements: [
+      'National Vice-President of INLD',
+      'Policy and strategy expert',
+      'Promoted party growth across states',
+      'Champion of rural development',
+      'Led strategic planning initiatives'
+    ],
+    connect: { twitter: '@RSChoudhary', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 7,
+    imageUrl: 'https://www.jagranimages.com/images/newimg/10122019/10_12_2019-03ynr-53_19831598_83144.jpg',
+    name: 'Sher Singh Badshami',
+    experience: '28+ years',
+    role: 'National Vice-President & Chairman, Disciplinary Action Committee',
+    description: 'National Vice-President and Chairman of the Disciplinary Action Committee, known for maintaining party discipline and ethics.',
+    education: 'Bachelor of Laws, Punjabi University',
+    district: 'Sonipat',
+    constituency: 'Sonipat',
+    achievements: [
+      'National Vice-President of INLD',
+      'Chairman, Disciplinary Action Committee',
+      'Maintained party discipline',
+      'Expert in organizational ethics',
+      'Promoted transparency in governance'
+    ],
+    connect: { twitter: '@SherSinghBadshami', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 8,
+    imageUrl: 'https://th.bing.com/th/id/OIP.qQAJcfBAyjIRjjeB-cK_BgHaHa?w=195&h=195&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'M.S. Malik',
+    experience: '30+ years',
+    role: 'Chairman, Policy & Programming Committee',
+    description: 'Chairman of the Policy & Programming Committee, responsible for strategic planning and comprehensive policy formulation for the party.',
+    education: 'Master of Public Administration, Punjab University',
+    district: 'Hisar',
+    constituency: 'Hisar',
+    achievements: [
+      'Chairman, Policy & Programming Committee',
+      'Expert in policy formulation',
+      'Strategic planner for INLD',
+      'Led comprehensive policy reforms',
+      'Architect of party vision documents'
+    ],
+    connect: { twitter: '@MSMalik', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 9,
+    imageUrl: 'https://th.bing.com/th/id/OIP.e6ODTveTiFIJQKFUVVp8DwHaHY?w=177&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3',
+    name: 'S. Nachhatar Singh Malhan',
+    experience: '20+ years',
+    role: 'Office Secretary',
+    description: 'Office Secretary, manages party administration and ensures smooth operational efficiency across all party offices.',
+    education: 'Bachelor of Arts in Public Administration',
+    district: 'Fatehabad',
+    constituency: 'Fatehabad',
+    achievements: [
+      'Office Secretary of INLD',
+      'Expert in administrative management',
+      'Streamlined party operations',
+      'Led organizational efficiency initiatives',
+      'Coordinator for inter-state activities'
+    ],
+    connect: { twitter: '@NachhatarSinghMalhan', facebook: 'Facebook', email: 'Email' }
+  },
+  {
+    id: 10,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Rakesh+Sihag',
+    name: 'Rakesh Sihag',
+    experience: '15+ years',
+    role: 'Media Coordinator',
+    description: 'Media Coordinator, responsible for party communications, media relations, and public outreach strategies.',
+    education: 'Master of Journalism and Mass Communication',
+    district: 'Sirsa',
+    constituency: 'Sirsa',
+    achievements: [
+      'Media Coordinator of INLD',
+      'Expert in strategic communications',
+      'Built strong media relationships',
+      'Led digital outreach campaigns',
+      'Enhanced party public image'
+    ],
+    connect: { twitter: '@RakeshSihag', facebook: 'Facebook', email: 'Email' }
+  },
+  
+  {
+    id: 12,
+    imageUrl: 'https://placehold.co/400x600/ccc/FFFFFF?text=Adv+Raman+Dhaka',
+    name: 'Adv Raman Dhaka',
+    experience: '8+ years',
+    role: 'ISO Secretary General',
+    description: 'Secretary General of INLD Students Organization, responsible for student outreach and legal affairs.',
+    education: 'LLB',
+    district: 'Haryana',
+    constituency: '',
+    achievements: [
+      'ISO Secretary General',
+      'Legal advisor for student wing',
+      'Promoted student engagement'
+    ],
+    connect: { twitter: '', facebook: 'Facebook', email: 'Email' }
+  },
+  
+ 
+
 ];
 
 // --- Static lists for filters ---
@@ -184,12 +743,14 @@ const Leadership = () => {
 
   // Filter the data based on search term and filters
   const filteredData = useMemo(() => {
-    return cardData.filter(card => {
-      const nameMatch = card.name.toLowerCase().includes(searchTerm.toLowerCase());
-      const districtMatch = districtFilter ? card.district === districtFilter : true;
-      const constituencyMatch = constituencyFilter ? card.constituency === constituencyFilter : true;
-      return nameMatch && districtMatch && constituencyMatch;
-    });
+    return cardData
+      .filter(card => {
+        const nameMatch = card.name.toLowerCase().includes(searchTerm.toLowerCase());
+        const districtMatch = districtFilter ? card.district === districtFilter : true;
+        const constituencyMatch = constituencyFilter ? card.constituency === constituencyFilter : true;
+        return nameMatch && districtMatch && constituencyMatch;
+      })
+      .sort((a, b) => a.id - b.id); // Sort by ID number in ascending order
   }, [searchTerm, districtFilter, constituencyFilter]);
 
   return (

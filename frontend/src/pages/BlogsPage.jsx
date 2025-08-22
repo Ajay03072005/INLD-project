@@ -23,7 +23,7 @@ const BlogsPage = () => {
       title: "Sustainable Agriculture: INLD's Green Revolution 2.0",
       excerpt: "Our comprehensive plan to make Haryana's agriculture more sustainable, profitable, and environmentally friendly.",
       content: "Agriculture is the backbone of Haryana. Our Green Revolution 2.0 focuses on organic farming, water conservation, and modern farming techniques...",
-      author: "Dushyant Chautala",
+  author: "",
       date: "2025-08-03",
       category: "Agriculture",
       views: 980,

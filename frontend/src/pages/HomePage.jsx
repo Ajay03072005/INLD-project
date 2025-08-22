@@ -168,7 +168,7 @@ const HomePage = () => {
         <div className='bg-white text-card-foreground flex flex-col gap-6 rounded-xl border max-w-6xl mx-auto shadow-lg'>
           <div className='p-8'>
             <div className='flex flex-col md:flex-row gap-8 items-start'>
-              <img src='https://haryanament.com/wp-content/uploads/2023/12/dushyantchautalaharyanament.jpg' alt="Dushyant Chautala" className='w-48 h-48 rounded-lg object-cover mx-auto md:mx-0' />
+              
               <div className='flex-1'>
                 <blockquote className='text-lg text-gray-700 mb-4 italic'>
                   "INLD has always been the party of farmers and rural communities. As we continue our journey, our commitment to Haryana's development remains unwavering. We will ensure that the voice of every farmer, every worker, and every family in Haryana is heard and respected in the corridors of power."
